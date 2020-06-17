@@ -8,8 +8,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TITLE"
-        android:textAppearance="@android:style/TextAppearance.Large" />
+        android:text="@string/title"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/titleEditText"
@@ -20,8 +22,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DESCRIPTION"
-        android:textAppearance="@android:style/TextAppearance.Large" />
+        android:text="@string/description"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/descEditText"
@@ -29,16 +33,20 @@
         android:layout_height="wrap_content" />
 
     <LinearLayout
-        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PRIORITY"
-            android:textAppearance="@android:style/TextAppearance.Large" />
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/priority"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/prioritySpinner"
@@ -52,9 +60,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorAccent"
         android:padding="15dp"
-        android:text="Submit"
+        android:text="@string/submit"
         android:textColor="#ffffff" />
 
 </LinearLayout>

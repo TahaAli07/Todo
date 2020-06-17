@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="8dp"
     android:layout_marginTop="8dp"
-    android:layout_marginEnd="8dp">
+    android:layout_marginEnd="8dp"
+    android:clipToPadding="true"
+    app:cardBackgroundColor="@android:color/background_light"
+    app:cardCornerRadius="30dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,6 +21,8 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -27,14 +33,17 @@
                 android:maxLines="1"
                 android:minHeight="30dp"
                 android:text="This is a test title"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/descTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="70dp"
-                android:text="This is a test description" />
+                android:text="This is a test description"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <CheckBox
@@ -58,7 +67,8 @@
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
                 android:src="@drawable/baseline_undo_24"
-                android:text="undo" />
+                android:text="undo"
+                android:tint="@color/colorAccent" />
 
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/deleteBtn"
@@ -67,7 +77,8 @@
                 android:layout_marginLeft="5dp"
                 android:background="@android:color/transparent"
                 android:src="@drawable/baseline_delete_24"
-                android:text="remove" />
+                android:text="remove"
+                android:tint="#FF5733" />
 
         </LinearLayout>
     </LinearLayout>

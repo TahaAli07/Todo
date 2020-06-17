@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Todo</string>
     <string name="action_add">Add</string>
+    <string name="submit">Submit</string>
+    <string name="priority">PRIORITY</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="title">TITLE</string>
     <string-array name="priority_array">
         <item>Low</item>
         <item>Medium</item>

@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements NotesListAdapter.
             @Override
             public void onChanged(List<Note> notes) {
                 notesListAdapter.setNotesList(notes);
-                Toast.makeText(MainActivity.this, "onChanged", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, "onChanged", Toast.LENGTH_SHORT).show();
             }
         });
     }
